@@ -23,7 +23,8 @@ namespace MSA
     {
         static int size_DataBuffer_SP = 1280;
         Byte[] DataBuffer_SP = new Byte[size_DataBuffer_SP];
-        static int counter_receiveBytes = 0;
+        static int counter_receiveBytes = 0, counter_collectSamples=0;
+        bool flag_recording = false;
         short[] dataBuffer = new short[8];//准备填入到Channel1~Channel8的缓存数组
         static int size_dataToPlot = 10000;
         myCircleQueue<double> EMG_CH1 = new myCircleQueue<double>(size_dataToPlot);
@@ -79,6 +80,7 @@ namespace MSA
 
             // 初始化图表
             initializeFigures();
+            axWindowsMediaPlayer1.Visible = false;
         }
 
         private void initializeFigures()
@@ -191,6 +193,10 @@ namespace MSA
                         EMG_CH6_withinWindow.myEnQueue(dataBuffer[5]);
                         EMG_CH7_withinWindow.myEnQueue(dataBuffer[6]);
                         EMG_CH8_withinWindow.myEnQueue(dataBuffer[7]);
+                        if (flag_recording)
+                        {
+                            recordSampleData(dataBuffer);
+                        }
                     }
                 }
                 else  //counter_receiveBytes >= 16
@@ -233,6 +239,10 @@ namespace MSA
                         EMG_CH6_withinWindow.myEnQueue(dataBuffer[5]);
                         EMG_CH7_withinWindow.myEnQueue(dataBuffer[6]);
                         EMG_CH8_withinWindow.myEnQueue(dataBuffer[7]);
+                        if (flag_recording)
+                        {
+                            recordSampleData(dataBuffer);
+                        }
                     }
                 }
             }
@@ -563,10 +573,7 @@ namespace MSA
             //waveformPlot8.PlotY(EMG_CH8.toArray());
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void groupBox7_Enter(object sender, EventArgs e)
         {
@@ -627,6 +634,113 @@ namespace MSA
                 chart_activationFactor.Series.Add(sy);
             }
             chart_activation.ChartAreas[0].AxisX.MajorGrid.Interval = 1;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            string playName = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 14)
+                        + "\\videos\\action1_demo.mp4";
+            axWindowsMediaPlayer1.Visible = true;
+            axWindowsMediaPlayer1.URL = playName;
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+            timer_video.Start();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            string playName = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 14)
+                        + "\\videos\\action2_demo.mp4";
+            axWindowsMediaPlayer1.Visible = true;
+            axWindowsMediaPlayer1.URL = playName;
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+            timer_video.Start();
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            string playName = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 14)
+                        + "\\videos\\action3_demo.mp4";
+            axWindowsMediaPlayer1.Visible = true;
+            axWindowsMediaPlayer1.URL = playName;
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+            timer_video.Start();
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            string playName = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 14)
+                        + "\\videos\\action4_demo.mp4";
+            axWindowsMediaPlayer1.Visible = true;
+            axWindowsMediaPlayer1.URL = playName;
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+            timer_video.Start();
+        }
+
+        private void timer_video_Tick(object sender, EventArgs e)
+        {
+            if (this.axWindowsMediaPlayer1.playState.ToString() == "wmppsStopped" || this.axWindowsMediaPlayer1.playState.ToString() == "wmppsReady")
+            {
+                timer_video.Stop();
+                axWindowsMediaPlayer1.Visible = false;
+            }
+        }
+
+        //记录实验时的肌电采样信号
+        private void recordSampleData(short[] buffer) //单关节
+        {
+            for (int j = 0; j < 8; j++)//8个肌电通道
+            {
+                //EMGTrainData[counter_trainSamples, j] = (float)buffer[j]*1.43f;
+                //EMSampleData[counter_collectSamples, j] = buffer[j] * 1.43;
+            }
+            counter_collectSamples++;
+            if (counter_collectSamples == 90000) // 90s
+            {
+                timer_plotData.Stop();
+                flag_recording = false;
+                waveformPlot1.ClearData();
+                waveformPlot2.ClearData();
+                waveformPlot3.ClearData();
+                waveformPlot4.ClearData();
+                waveformPlot5.ClearData();
+                waveformPlot6.ClearData();
+                waveformPlot7.ClearData();
+                waveformPlot8.ClearData();
+            }
+        }
+
+        int t_second, total_second = 90;
+        private void timer_collect_Tick(object sender, EventArgs e)
+        {
+            t_second = total_second - counter_collectSamples / 1000;
+            label_indicator.Text = "采集时间剩余：" + t_second.ToString() + "s";
+            if (t_second == 0)
+            {
+                timer_collect.Stop();
+            }
+        }
+
+        private void saveEMGButton_Click(object sender, EventArgs e)
+        {
+            if (serialPort1.IsOpen)
+            {
+                //byte[] data = new byte[10] { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+                //serialPort1.Write(data, 0, data.Length);
+                waveformPlot1.ClearData();
+                waveformPlot2.ClearData();
+                waveformPlot3.ClearData();
+                waveformPlot4.ClearData();
+                waveformPlot5.ClearData();
+                waveformPlot6.ClearData();
+                waveformPlot7.ClearData();
+                waveformPlot8.ClearData();
+                serialPort1.DiscardInBuffer();
+                counter_receiveBytes = 0;
+                counter_collectSamples = 0;
+            }
+            label_indicator.Visible = true;
+            timer_collect.Start();
         }
     }
 }

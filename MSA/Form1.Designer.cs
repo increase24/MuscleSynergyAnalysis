@@ -30,47 +30,47 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.ListViewItem listViewItem81 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem(new string[] {
             "肱二头肌",
             "",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem82 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem(new string[] {
             "肱三头肌",
             "",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem83 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem(new string[] {
             "肱桡肌",
             "",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem84 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem(new string[] {
             "尺侧腕屈肌",
             "",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem85 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem(new string[] {
             "桡侧腕屈肌",
             "",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem86 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem(new string[] {
             "尺侧腕伸肌",
             "",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem87 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem(new string[] {
             "桡侧腕长伸肌",
             "",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem88 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem(new string[] {
             "三角肌",
             "",
             ""}, -1);
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea31 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend31 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series31 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea32 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend32 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series32 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea33 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend33 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series33 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.waveformGraph1 = new NationalInstruments.UI.WindowsForms.WaveformGraph();
             this.waveformPlot1 = new NationalInstruments.UI.WaveformPlot();
@@ -94,7 +94,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label33 = new System.Windows.Forms.Label();
+            this.saveEMGButton = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.waveformGraph8 = new NationalInstruments.UI.WindowsForms.WaveformGraph();
             this.waveformPlot8 = new NationalInstruments.UI.WaveformPlot();
             this.xAxis8 = new NationalInstruments.UI.XAxis();
@@ -112,9 +119,7 @@
             this.xAxis5 = new NationalInstruments.UI.XAxis();
             this.yAxis5 = new NationalInstruments.UI.YAxis();
             this.label_indicator = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
@@ -124,9 +129,8 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.saveEMGButton = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.stopEMGButton = new System.Windows.Forms.Button();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             this.startEMGButton = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -185,18 +189,17 @@
             this.chart_activationFactor = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.NMFButton = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.importDataButton = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.importDataButton = new System.Windows.Forms.Button();
-            this.NMFButton = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.timer_video = new System.Windows.Forms.Timer(this.components);
+            this.timer_collect = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.waveformGraph1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.waveformGraph2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.waveformGraph3)).BeginInit();
@@ -235,6 +238,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel4.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -458,6 +462,49 @@
             this.panel1.Size = new System.Drawing.Size(533, 948);
             this.panel1.TabIndex = 21;
             // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(302, 899);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(65, 12);
+            this.label33.TabIndex = 117;
+            this.label33.Text = "保存时长：";
+            // 
+            // saveEMGButton
+            // 
+            this.saveEMGButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.saveEMGButton.Font = new System.Drawing.Font("幼圆", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.saveEMGButton.ImageIndex = 13;
+            this.saveEMGButton.ImageList = this.imageList1;
+            this.saveEMGButton.Location = new System.Drawing.Point(390, 893);
+            this.saveEMGButton.Name = "saveEMGButton";
+            this.saveEMGButton.Size = new System.Drawing.Size(121, 52);
+            this.saveEMGButton.TabIndex = 125;
+            this.saveEMGButton.UseVisualStyleBackColor = false;
+            this.saveEMGButton.Click += new System.EventHandler(this.saveEMGButton_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "201.png");
+            this.imageList1.Images.SetKeyName(1, "202.png");
+            this.imageList1.Images.SetKeyName(2, "203.png");
+            this.imageList1.Images.SetKeyName(3, "X001.png");
+            this.imageList1.Images.SetKeyName(4, "X002.png");
+            this.imageList1.Images.SetKeyName(5, "X003.png");
+            this.imageList1.Images.SetKeyName(6, "X004.png");
+            this.imageList1.Images.SetKeyName(7, "诊断.png");
+            this.imageList1.Images.SetKeyName(8, "201.png");
+            this.imageList1.Images.SetKeyName(9, "202.png");
+            this.imageList1.Images.SetKeyName(10, "203.png");
+            this.imageList1.Images.SetKeyName(11, "204.png");
+            this.imageList1.Images.SetKeyName(12, "图片12.png");
+            this.imageList1.Images.SetKeyName(13, "保存按钮.png");
+            this.imageList1.Images.SetKeyName(14, "开始按钮.png");
+            this.imageList1.Images.SetKeyName(15, "停止按钮.png");
+            // 
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.label19);
@@ -486,6 +533,54 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "肌电信号";
             this.groupBox7.Enter += new System.EventHandler(this.groupBox7_Enter);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label19.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label19.Location = new System.Drawing.Point(15, 357);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(56, 16);
+            this.label19.TabIndex = 125;
+            this.label19.Text = "通道五";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label20.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label20.Location = new System.Drawing.Point(15, 599);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(56, 16);
+            this.label20.TabIndex = 128;
+            this.label20.Text = "通道八";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label21.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label21.Location = new System.Drawing.Point(15, 516);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(56, 16);
+            this.label21.TabIndex = 127;
+            this.label21.Text = "通道七";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label22.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label22.Location = new System.Drawing.Point(15, 440);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(56, 16);
+            this.label22.TabIndex = 126;
+            this.label22.Text = "通道六";
             // 
             // waveformGraph8
             // 
@@ -640,17 +735,8 @@
             this.label_indicator.Name = "label_indicator";
             this.label_indicator.Size = new System.Drawing.Size(154, 16);
             this.label_indicator.TabIndex = 120;
-            this.label_indicator.Text = "采集时间剩余：80s";
+            this.label_indicator.Text = "采集时间剩余：90s";
             this.label_indicator.Visible = false;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(302, 899);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(65, 12);
-            this.label33.TabIndex = 117;
-            this.label33.Text = "保存时长：";
             // 
             // label34
             // 
@@ -660,14 +746,6 @@
             this.label34.Size = new System.Drawing.Size(11, 12);
             this.label34.TabIndex = 116;
             this.label34.Text = "s";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(304, 917);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(55, 21);
-            this.textBox12.TabIndex = 115;
-            this.textBox12.Text = "90";
             // 
             // groupBox1
             // 
@@ -698,6 +776,7 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 129;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // radioButton4
             // 
@@ -722,6 +801,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 126;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // radioButton3
             // 
@@ -771,6 +851,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 128;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // radioButton1
             // 
@@ -785,39 +866,6 @@
             this.radioButton1.Text = "向前抬臂";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // saveEMGButton
-            // 
-            this.saveEMGButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.saveEMGButton.Font = new System.Drawing.Font("幼圆", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.saveEMGButton.ImageIndex = 13;
-            this.saveEMGButton.ImageList = this.imageList1;
-            this.saveEMGButton.Location = new System.Drawing.Point(390, 893);
-            this.saveEMGButton.Name = "saveEMGButton";
-            this.saveEMGButton.Size = new System.Drawing.Size(121, 52);
-            this.saveEMGButton.TabIndex = 125;
-            this.saveEMGButton.UseVisualStyleBackColor = false;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "201.png");
-            this.imageList1.Images.SetKeyName(1, "202.png");
-            this.imageList1.Images.SetKeyName(2, "203.png");
-            this.imageList1.Images.SetKeyName(3, "X001.png");
-            this.imageList1.Images.SetKeyName(4, "X002.png");
-            this.imageList1.Images.SetKeyName(5, "X003.png");
-            this.imageList1.Images.SetKeyName(6, "X004.png");
-            this.imageList1.Images.SetKeyName(7, "诊断.png");
-            this.imageList1.Images.SetKeyName(8, "201.png");
-            this.imageList1.Images.SetKeyName(9, "202.png");
-            this.imageList1.Images.SetKeyName(10, "203.png");
-            this.imageList1.Images.SetKeyName(11, "204.png");
-            this.imageList1.Images.SetKeyName(12, "图片12.png");
-            this.imageList1.Images.SetKeyName(13, "保存按钮.png");
-            this.imageList1.Images.SetKeyName(14, "开始按钮.png");
-            this.imageList1.Images.SetKeyName(15, "停止按钮.png");
-            // 
             // stopEMGButton
             // 
             this.stopEMGButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -829,6 +877,14 @@
             this.stopEMGButton.Size = new System.Drawing.Size(126, 52);
             this.stopEMGButton.TabIndex = 124;
             this.stopEMGButton.UseVisualStyleBackColor = false;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(304, 917);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(55, 21);
+            this.textBox12.TabIndex = 115;
+            this.textBox12.Text = "90";
             // 
             // startEMGButton
             // 
@@ -1266,14 +1322,14 @@
             this.listView1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.listView1.HideSelection = false;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem81,
-            listViewItem82,
-            listViewItem83,
-            listViewItem84,
-            listViewItem85,
-            listViewItem86,
-            listViewItem87,
-            listViewItem88});
+            listViewItem9,
+            listViewItem10,
+            listViewItem11,
+            listViewItem12,
+            listViewItem13,
+            listViewItem14,
+            listViewItem15,
+            listViewItem16});
             this.listView1.Location = new System.Drawing.Point(21, 20);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(447, 192);
@@ -1385,17 +1441,17 @@
             // chart_synergyMatrix
             // 
             this.chart_synergyMatrix.BackColor = System.Drawing.Color.Transparent;
-            chartArea31.Name = "ChartArea1";
-            this.chart_synergyMatrix.ChartAreas.Add(chartArea31);
-            legend31.Name = "Legend1";
-            this.chart_synergyMatrix.Legends.Add(legend31);
+            chartArea4.Name = "ChartArea1";
+            this.chart_synergyMatrix.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart_synergyMatrix.Legends.Add(legend4);
             this.chart_synergyMatrix.Location = new System.Drawing.Point(19, 315);
             this.chart_synergyMatrix.Margin = new System.Windows.Forms.Padding(2);
             this.chart_synergyMatrix.Name = "chart_synergyMatrix";
-            series31.ChartArea = "ChartArea1";
-            series31.Legend = "Legend1";
-            series31.Name = "Series1";
-            this.chart_synergyMatrix.Series.Add(series31);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart_synergyMatrix.Series.Add(series4);
             this.chart_synergyMatrix.Size = new System.Drawing.Size(655, 238);
             this.chart_synergyMatrix.TabIndex = 9;
             this.chart_synergyMatrix.Text = "chart1";
@@ -1429,18 +1485,18 @@
             // chart_activation
             // 
             this.chart_activation.BackColor = System.Drawing.Color.Transparent;
-            chartArea32.Name = "ChartArea1";
-            this.chart_activation.ChartAreas.Add(chartArea32);
-            legend32.Name = "Legend1";
-            this.chart_activation.Legends.Add(legend32);
+            chartArea5.Name = "ChartArea1";
+            this.chart_activation.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart_activation.Legends.Add(legend5);
             this.chart_activation.Location = new System.Drawing.Point(19, 40);
             this.chart_activation.Margin = new System.Windows.Forms.Padding(2);
             this.chart_activation.Name = "chart_activation";
-            series32.ChartArea = "ChartArea1";
-            series32.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series32.Legend = "Legend1";
-            series32.Name = "Series1";
-            this.chart_activation.Series.Add(series32);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.chart_activation.Series.Add(series5);
             this.chart_activation.Size = new System.Drawing.Size(655, 238);
             this.chart_activation.TabIndex = 18;
             this.chart_activation.Text = "chart3";
@@ -1460,18 +1516,18 @@
             // chart_activationFactor
             // 
             this.chart_activationFactor.BackColor = System.Drawing.Color.Transparent;
-            chartArea33.Name = "ChartArea1";
-            this.chart_activationFactor.ChartAreas.Add(chartArea33);
-            legend33.Name = "Legend1";
-            this.chart_activationFactor.Legends.Add(legend33);
+            chartArea6.Name = "ChartArea1";
+            this.chart_activationFactor.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chart_activationFactor.Legends.Add(legend6);
             this.chart_activationFactor.Location = new System.Drawing.Point(19, 567);
             this.chart_activationFactor.Margin = new System.Windows.Forms.Padding(2);
             this.chart_activationFactor.Name = "chart_activationFactor";
-            series33.ChartArea = "ChartArea1";
-            series33.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series33.Legend = "Legend1";
-            series33.Name = "Series1";
-            this.chart_activationFactor.Series.Add(series33);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chart_activationFactor.Series.Add(series6);
             this.chart_activationFactor.Size = new System.Drawing.Size(655, 238);
             this.chart_activationFactor.TabIndex = 12;
             this.chart_activationFactor.Text = "chart2";
@@ -1501,6 +1557,31 @@
             this.panel3.Size = new System.Drawing.Size(734, 1032);
             this.panel3.TabIndex = 24;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button3.Font = new System.Drawing.Font("幼圆", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button3.ImageIndex = 10;
+            this.button3.ImageList = this.imageList1;
+            this.button3.Location = new System.Drawing.Point(379, 899);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(131, 57);
+            this.button3.TabIndex = 22;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // NMFButton
+            // 
+            this.NMFButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.NMFButton.Font = new System.Drawing.Font("幼圆", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.NMFButton.ImageIndex = 9;
+            this.NMFButton.ImageList = this.imageList1;
+            this.NMFButton.Location = new System.Drawing.Point(231, 899);
+            this.NMFButton.Name = "NMFButton";
+            this.NMFButton.Size = new System.Drawing.Size(131, 57);
+            this.NMFButton.TabIndex = 21;
+            this.NMFButton.UseVisualStyleBackColor = false;
+            this.NMFButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.NMFButton_MouseClick);
+            // 
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.label7);
@@ -1517,6 +1598,19 @@
             this.groupBox9.TabIndex = 23;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "肌肉协同分析";
+            // 
+            // importDataButton
+            // 
+            this.importDataButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.importDataButton.Font = new System.Drawing.Font("幼圆", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.importDataButton.ImageIndex = 8;
+            this.importDataButton.ImageList = this.imageList1;
+            this.importDataButton.Location = new System.Drawing.Point(79, 899);
+            this.importDataButton.Name = "importDataButton";
+            this.importDataButton.Size = new System.Drawing.Size(131, 57);
+            this.importDataButton.TabIndex = 20;
+            this.importDataButton.UseVisualStyleBackColor = false;
+            this.importDataButton.Click += new System.EventHandler(this.importDataButton_Click);
             // 
             // pictureBox3
             // 
@@ -1540,92 +1634,6 @@
             this.pictureBox9.TabIndex = 105;
             this.pictureBox9.TabStop = false;
             // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label19.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label19.Location = new System.Drawing.Point(15, 357);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(56, 16);
-            this.label19.TabIndex = 125;
-            this.label19.Text = "通道五";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label20.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label20.Location = new System.Drawing.Point(15, 599);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(56, 16);
-            this.label20.TabIndex = 128;
-            this.label20.Text = "通道八";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label21.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label21.Location = new System.Drawing.Point(15, 516);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(56, 16);
-            this.label21.TabIndex = 127;
-            this.label21.Text = "通道七";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label22.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label22.Location = new System.Drawing.Point(15, 440);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(56, 16);
-            this.label22.TabIndex = 126;
-            this.label22.Text = "通道六";
-            // 
-            // importDataButton
-            // 
-            this.importDataButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.importDataButton.Font = new System.Drawing.Font("幼圆", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.importDataButton.ImageIndex = 8;
-            this.importDataButton.ImageList = this.imageList1;
-            this.importDataButton.Location = new System.Drawing.Point(79, 899);
-            this.importDataButton.Name = "importDataButton";
-            this.importDataButton.Size = new System.Drawing.Size(131, 57);
-            this.importDataButton.TabIndex = 20;
-            this.importDataButton.UseVisualStyleBackColor = false;
-            this.importDataButton.Click += new System.EventHandler(this.importDataButton_Click);
-            // 
-            // NMFButton
-            // 
-            this.NMFButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.NMFButton.Font = new System.Drawing.Font("幼圆", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.NMFButton.ImageIndex = 9;
-            this.NMFButton.ImageList = this.imageList1;
-            this.NMFButton.Location = new System.Drawing.Point(231, 899);
-            this.NMFButton.Name = "NMFButton";
-            this.NMFButton.Size = new System.Drawing.Size(131, 57);
-            this.NMFButton.TabIndex = 21;
-            this.NMFButton.UseVisualStyleBackColor = false;
-            this.NMFButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.NMFButton_MouseClick);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button3.Font = new System.Drawing.Font("幼圆", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.ImageIndex = 10;
-            this.button3.ImageList = this.imageList1;
-            this.button3.Location = new System.Drawing.Point(379, 899);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(131, 57);
-            this.button3.TabIndex = 22;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.pictureBox9);
@@ -1643,12 +1651,30 @@
             this.groupBox8.Controls.Add(this.pictureBox3);
             this.groupBox8.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox8.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox8.Location = new System.Drawing.Point(17, 71);
+            this.groupBox8.Location = new System.Drawing.Point(17, 68);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(514, 955);
             this.groupBox8.TabIndex = 106;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "电刺激治疗";
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(570, 3);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(1380, 1030);
+            this.axWindowsMediaPlayer1.TabIndex = 107;
+            // 
+            // timer_video
+            // 
+            this.timer_video.Interval = 50;
+            this.timer_video.Tick += new System.EventHandler(this.timer_video_Tick);
+            // 
+            // timer_collect
+            // 
+            this.timer_collect.Tick += new System.EventHandler(this.timer_collect_Tick);
             // 
             // Form1
             // 
@@ -1656,6 +1682,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -1709,6 +1736,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel4.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1841,6 +1869,9 @@
         private System.Windows.Forms.Button importDataButton;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.GroupBox groupBox8;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.Timer timer_video;
+        private System.Windows.Forms.Timer timer_collect;
     }
 }
 
